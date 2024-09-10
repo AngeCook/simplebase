@@ -14,6 +14,7 @@ CSS TABLE OF CONTENTS
     # GLOBAL RESET
     # GLOBAL COLORS
     # GLOBAL TYPOGRAPHY
+    # GLOBAL MEDIA (eg IMAGES)
     ------------------------------------
 --------------------------------------
 --------------------------------------*/
@@ -124,4 +125,13 @@ a {
         /*NEW SCHOOL WIDOW SLAYER */
         text-wrap: pretty;
     }
+
+    /* GLOBAL MEDIA */
+
+    img {
+        /* MAKE ALL IMAGES SHRINK ON SMALL SCREENS */
+        max-width: 100%;
+        height: auto;
+    }
+
 }
