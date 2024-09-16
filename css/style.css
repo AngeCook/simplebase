@@ -200,14 +200,14 @@ body {
 
 }
 
-.row>* {
+.row > * {
     margin-bottom: var(--gridgap);
 }
 
 @media (min-width: 768px) {
     .row {
         display: grid;
-        grid-template-columns: repeat (12, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         gap: var(--gridgap);
     }
 
@@ -234,7 +234,7 @@ body {
 }
 
 /* FOR DEMO PURPOSES */
-.demo>* {
+.demo > * {
     background-color: #444;
     padding: 1em;
     text-align: center;
