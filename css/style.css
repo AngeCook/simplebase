@@ -25,10 +25,13 @@ CSS TABLE OF CONTENTS
             # HERO
     # FOOTER
 
+/* UI COMPONENTS
+    # BUTTONS
+    # CARDS
 
-------------------------------------
-------------------------------------
-------------------------------------*/
+   
+ /* --------------- */
+
 
 /* ------------------ */
 /* ----  GLOBALS ---- */
@@ -46,11 +49,17 @@ CSS TABLE OF CONTENTS
     --color-text-headings: rgb(0 0 0 / 1);
     --color-links: rgb(0 0 153/ 0.8);
     --color-links-hover: rgb(255 255 0 / 1);
+
+    --color-links-dark: rgb(102 102 102);
+    --color-links-darker rgb(0 0 0 );
+    --color-links-light: rgb(204 204 204);
+    --color-links-lighter: rgb(255 255 255);
+
     --color-siteheader-background: transparent;
     --color-siteheader-links: rgb(255 255 255); 
     --color-hero-background: rgb(100 100 100);
     --color-hero-text: rgb(255 255 255));
-    
+
     --color-sitefooter-background: rgb (100 100 100);
     --color-sitefooter-text: rgb (255 255 255 / .8);
     --color-sitefooter-headings: rgb (255 255 255 / 1);
@@ -402,4 +411,29 @@ section {
                 padding: 0;
             }
         }
+}
+/* ----------------------- */
+/* ---- UI COMPONENTS ---- */
+/* ----------------------- */
+
+/* BUTTONS */
+
+.button {
+    border: 1px solid var(--color-links);
+    display: inline-block;
+    background-color: var(--color-links);
+    color: white;
+
+    /* LIGHT BUTTON VARIANT */
+    &.light {
+        border-color: var(--color-links-light);
+        background-color: var(--color-links-light);
+        color: var(--color-links-darker);
+
+    &.hover {
+        border-color: var(--color-links-lighter);
+        background-color: var(--color-links-lighter);
+    }
+    }
+
 }
