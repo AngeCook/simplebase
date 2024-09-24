@@ -287,19 +287,22 @@ body {
 /* SITE HEADER */
 .site-header {
     background-color: yellow;
-    /* PUT ALL HEADER CHILDREN SIDE-BY-SIDE AND VERT CENTERED */
+    /* PUT ALL HEADER CHILDREN SIDE-BY-SIDE AND VERT CENTERED ON LARGE SCREENS */
+    @media (min-width:768px) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
 
     /* ADD SOME SPACING / PADDING AROUND THE HEADER */
     padding: var(--unit-small);
 
     /* RENDER HEADER ON TOP OF HERO */
-    position: absolute;
-    width: 100%;
+    @media (min-width: 768px) {
+        position: absolute;
+        width: 100%;
+    }
     
-
-
      /* REMOVE LINK UNDERLINES AND SET SITE HEADER LINK COLOR */
      a {
         color: var(--color-links-siteheader);
@@ -323,15 +326,22 @@ body {
         .site-nav {
             /* REMOVE MARGINS AND BULLETS FROM LIST */
             ul {margin: 0;
+                padding:0;
             list-style: none;
     
-            /*DISPLAY CHILDREN SIDE-BY-SIDE*/
+            /*DISPLAY CHILDREN SIDE-BY-SIDE ON LARGE SCREEN*/
+            @media (min-width: 768px) {
             display: flex;
+            }
        
             /*MAKE SITE NAV LINKS BIG LIKE BUTTONS*/
              a {
                 display: block;
                 padding: 1em;
+
+
+                
+            }
             
          }
     }
@@ -370,5 +380,18 @@ section {
     /* ADD SOME GENERAL SPACING/PADDING AROUND THE FOOTER */
     padding: var(--unit-small);
 }
+/* SITE FOOTER */
+.site-footer{
+    background-color: var(--color-hero-background);
+        
+        /* ADD SOME GENERAL SPACING/PADDING AROUND THE FOOTER */
+        padding: var(--unit-small);
 
+        .site-nav {
+            ul{
+                list-style: none;
+                margin: 0%;
+                padding: 0;
+            }
+        }
 }
