@@ -11,6 +11,7 @@ CSS TABLE OF CONTENTS
     # GLOBAL TYPOGRAPHY
     # GLOBAL MEDIA (eg IMAGES)
     # GLOBAL HELPERS
+
 # LAYOUT
     # MEDIA QUERIES / BREAKPOINTS (RESPONSIVE TYPOGRAPHY)
     # CONTAINER
@@ -43,7 +44,6 @@ CSS TABLE OF CONTENTS
 :root {
 
     /*DEFINE ALL COMMONLY USED COLORS HERE */
-
     --color-body-background: rgb(255 255 255);
     --color-text-body: rgb(0 0 0 / .8);
     --color-text-headings: rgb(0 0 0 / 1);
@@ -112,8 +112,10 @@ a {
     /*SET THE COLOR OF ALL TEXT LINKS */
     color: var(--color-links);
 
+    /* SET THE COLOR OF ALL HOVER STATES ON THE TEXT LINKS */
+    
     &:hover {
-        /* SET THE COLOR OF ALL HOVER STATES ON THE TEXT LINKS */
+
         color: var(--color-links-hover);
     }
 }
@@ -152,7 +154,6 @@ h2 {
     line-height: 1.2;
 }
 
-
 h3 {
     /* SET H3 FONT SIZE */
     font-size: 1.5em;
@@ -183,6 +184,13 @@ img {
     position: absolute;
     top: -9999px;
     left: -9999px;
+}
+@media (max-width: 767px) {
+    .hide-visually-smallonly {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
 }
 
 
