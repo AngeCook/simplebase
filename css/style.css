@@ -61,6 +61,8 @@ CSS TABLE OF CONTENTS
     --color-text-headings: rgb(255, 255, 255); */
 
 
+    --color-links: rgb(0, 144,188);
+    --color-links-hover: rgb(0,62,143);
     --color-links-dark: rgb(102 102 102);
     --color-links-darker: rgb(0 0 0);
     --color-links-light: rgb(204 204 204);
